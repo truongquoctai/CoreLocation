@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="bBU-jk-jCl">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="acP-dS-yJG" customClass="SplashViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QaN-2D-RRk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="fmf-wP-JJz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JvY-Af-zdW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CkV-jO-t3Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CkV-jO-t3Z" firstAttribute="trailing" secondItem="JvY-Af-zdW" secondAttribute="trailing" id="50g-pi-QZl"/>
+                            <constraint firstItem="CkV-jO-t3Z" firstAttribute="trailing" secondItem="fmf-wP-JJz" secondAttribute="trailing" id="8m6-xE-wmP"/>
+                            <constraint firstItem="fmf-wP-JJz" firstAttribute="top" secondItem="QaN-2D-RRk" secondAttribute="top" id="bxX-NQ-6hL"/>
+                            <constraint firstItem="JvY-Af-zdW" firstAttribute="leading" secondItem="CkV-jO-t3Z" secondAttribute="leading" id="eut-pQ-ELI"/>
+                            <constraint firstAttribute="bottom" secondItem="JvY-Af-zdW" secondAttribute="bottom" id="fvV-hg-1hb"/>
+                            <constraint firstItem="JvY-Af-zdW" firstAttribute="top" secondItem="QaN-2D-RRk" secondAttribute="top" id="oEC-yT-yiJ"/>
+                            <constraint firstItem="fmf-wP-JJz" firstAttribute="leading" secondItem="CkV-jO-t3Z" secondAttribute="leading" id="zDM-Fq-oIj"/>
+                            <constraint firstAttribute="bottom" secondItem="fmf-wP-JJz" secondAttribute="bottom" id="zbo-RN-hxR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nL-vA-VcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108.69565217391305" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash" width="720" height="1280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
